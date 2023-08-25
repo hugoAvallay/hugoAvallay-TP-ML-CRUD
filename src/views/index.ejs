@@ -18,7 +18,7 @@
 				<h2 class="products-title">Basado en tu última visita</h2>
 			</div>
 			<!-- Show the "visited" products -->
-			<% visited.forEach(product=> { %>
+			<% visited.forEach(product => { %>
 				<div class="col-12 col-sm-6 col-lg-3">
 					<%- include('partials/product',{
 						...product,
@@ -38,7 +38,7 @@
 				<h2 class="products-title">Ofertas</h2>
 			</div>
 			<!-- Show the "in-sale" products -->
-			<% sale.forEach(product=> { %>
+			<% sale.forEach(product => { %>
 				<div class="col-12 col-sm-6 col-lg-3">
 					<%- include('partials/product',{
 						...product,
