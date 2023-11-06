@@ -11,7 +11,7 @@
 	<div class="container products-wrapper">
 		<div class="row">
 			<div class="col-12">
-				<h2 class="products-title">Detalle del producto:<%= name %></h2>
+				<h2 class="products-title">Detalle del producto: <%= name %></h2>
 			</div>
 		</div>
 		<div class="product-detail">
@@ -29,20 +29,18 @@
 							<p class="product-detail-price small">
 								<span>$<%= toThousand(price) %></span>
 								/
-								<b><%= discount%>% OFF</b>
+								<b><%= discount %>% OFF</b>
 							</p>
 							<p class="product-detail-price">
-								$<%= toThousand(price-(price*discount/100).toFixed(0)) %>
+								$<%= toThousand(price - (price * discount / 100).toFixed(0)) %>
 							</p>
-							
-						 
+
 						<% } else{ %>
+							
 							<p class="product-detail-price">
 								$<%= toThousand(price) %>
 							</p>
-
-						<% } %>
-
+							<% } %>
 						<ul class="actions-list">
 							<li>
 								<i class="fas fa-credit-card"></i>

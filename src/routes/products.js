@@ -22,7 +22,6 @@ router.put('/update/:id', productsController.update);
 
 
 /*** DELETE ONE PRODUCT***/ 
-
 router.delete('/delete/:id', productsController.destroy); 
 
 
